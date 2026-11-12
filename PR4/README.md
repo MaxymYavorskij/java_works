@@ -9,7 +9,7 @@
 |---|---:|---|---|
 | Lombok | 1.18.48 | Генерує геттери, білдери, `equals`, `hashCode` і `toString` під час компіляції. Має scope `provided`, тому не потрапляє в runtime. | `order-model` |
 | JavaFaker | 1.0.2 | Генерує випадкові товари, імена клієнтів, бренди, кольори та ціни. | `order-processing`, клас `FakeOrderGenerator` |
-| SnakeYAML | 1.23 | Читає YAML-словники JavaFaker. Прямих імпортів у коді проєкту немає. | JavaFaker у runtime |
+| SnakeYAML | 2.7 | Читає YAML-словники JavaFaker. Прямих імпортів у коді проєкту немає. | JavaFaker у runtime |
 | Commons Lang3 | 3.5 | Транзитивна залежність JavaFaker. Містить допоміжні методи для роботи з рядками та об'єктами. | JavaFaker |
 | Generex | 1.0.2 | Транзитивна залежність JavaFaker. Генерує рядки за регулярними виразами. Приклад: `Model-####`. | JavaFaker |
 | Automaton | 1.11-8 | Транзитивна залежність Generex. Працює з регулярними автоматами. | Generex |
@@ -26,8 +26,8 @@ order-processing
 │   ├── commons-lang3 3.5
 │   ├── generex 1.0.2
 │   │   └── automaton 1.11-8
-│   └── snakeyaml 1.23 (android) — виключено
-└── snakeyaml 1.23 (звичайний JVM JAR) — додано явно
+│   └── snakeyaml 2.7 (android) — виключено
+└── snakeyaml 2.7 (звичайний JVM JAR) — додано явно
 ```
 
 ## Структура проєкту
